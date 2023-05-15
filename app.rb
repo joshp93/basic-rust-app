@@ -6,7 +6,7 @@ end
 
 loop do
     print '> '
-    choice = gets.to_i
+    choice = gets.chomp.to_i
     break if choice.between?(1, options.size)
 
     puts "Enter a value between 1 and #{options.size}"
